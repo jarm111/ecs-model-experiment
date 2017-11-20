@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class CircularPatrolMovement : MonoBehaviour {
 
     [SerializeField]
-    private float radius = 1f;
+    private float radius = 1;
     [SerializeField]
     private float speed = 3;
 
