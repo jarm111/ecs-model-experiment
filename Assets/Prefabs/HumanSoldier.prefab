@@ -75,7 +75,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 1931197120264858, guid: aacf1b3a7a3b9ac4f96f18a7c55f5eb5, type: 2}
-  rateOfFire: 3
+  rateOfFire: 1
+  target: {fileID: 0}
 --- !u!114 &114997039693279446
 MonoBehaviour:
   m_ObjectHideFlags: 1
