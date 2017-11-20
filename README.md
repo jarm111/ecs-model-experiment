@@ -11,18 +11,20 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-
-- Movement pattern for medic
-- Weapon & hit mechanic
-- Health & death mechanic
+- Weapon targeting & shooting mechanic
+- Hit mechanic
+- Life & death mechanic
+- Health bars
 - Shield mechanic
 - Hud view for remaining team members
 - Hud view for game over
 
 ## DONE
 - Movement pattern for soldier
+- Movement pattern for medic
 
-## Algorithms
+## TOFIX
 
-### Circle movement
+## FIXED
+- Circular movement only works at position (0,0)
 
