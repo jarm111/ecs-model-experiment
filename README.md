@@ -12,18 +12,18 @@ An experiment project playing with Unity's Entity Component System model.
 
 ## TODO
 - Health bars
-- Shield mechanic
-- Healing mechanic
+- Shield mechanics
+- Healing mechanics
 - Hud view for remaining team members
 - Hud view for game over
 
 ## DONE
 - Movement pattern for soldier
 - Movement pattern for medic
-- Weapon shooting mechanic
-- Weapon targeting mechanic
-- Hit mechanic
-- Life & death mechanic
+- Weapon shooting mechanics
+- Weapon targeting mechanics
+- Hit mechanics
+- Life & death mechanics
 
 ## TOFIX
 
