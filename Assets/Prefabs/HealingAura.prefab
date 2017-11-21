@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212099774643796852}
   - component: {fileID: 61183370148496548}
   - component: {fileID: 114745165394478904}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HealingAura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1f9e4aa0319e54c8d1e90dd4ee7b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healingAmount: 0.05
+  healingAmount: 0.02
 --- !u!212 &212099774643796852
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -112,7 +112,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 45145034d349ecd4e81f9c889c89d3ca, type: 3}
-  m_Color: {r: 0.9862069, g: 1, b: 0, a: 0.51}
+  m_Color: {r: 0.9862069, g: 1, b: 0, a: 0.216}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50469683190847382}
   - component: {fileID: 114997039693279446}
   - component: {fileID: 114970453882469780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HumanSoldier
   m_TagString: Human
   m_Icon: {fileID: 0}

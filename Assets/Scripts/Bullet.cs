@@ -35,6 +35,11 @@ public class Bullet : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponent<Life>().ReduceHealth(damage);
+        var life = collision.GetComponent<Life>();
+        if (life != null)
+        {
+            life.ReduceHealth(damage);
+        }
+        Destroy(gameObject);
     }
 }

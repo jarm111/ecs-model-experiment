@@ -7,6 +7,10 @@ public class HealingAura : MonoBehaviour {
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        collision.GetComponent<Life>().IncreaseHealth(healingAmount);
+        var life = collision.GetComponent<Life>();
+        if (life != null)
+        {
+            life.IncreaseHealth(healingAmount);
+        }
     }
 }

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Alien
   - Human
+  - HumanBullet
   layers:
   - Default
   - TransparentFX
@@ -15,11 +16,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Humans
+  - Aliens
+  - Healing
+  - Bullet
+  - Shield
   - 
   - 
   - 

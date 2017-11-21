@@ -11,13 +11,13 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-- Health bars
 - Shield mechanics
 - Healing mechanics
 - Hud view for remaining team members
 - Hud view for game over
 
 ## DONE
+- Health bars
 - Movement pattern for soldier
 - Movement pattern for medic
 - Weapon shooting mechanics
@@ -29,4 +29,3 @@ An experiment project playing with Unity's Entity Component System model.
 
 ## FIXED
 - Circular movement only works at position (0,0)
-

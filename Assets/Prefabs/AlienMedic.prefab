@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212702414805196328}
   - component: {fileID: 50268719389027414}
   - component: {fileID: 114707448518335822}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AlienMedic
   m_TagString: Alien
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 212252459505076962}
   - component: {fileID: 61275369130524042}
   - component: {fileID: 114934086593762408}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: HealingAura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
