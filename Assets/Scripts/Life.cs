@@ -40,4 +40,10 @@ public class Life : MonoBehaviour {
     {
         Destroy(gameObject);
     }
+
+    public void IncreaseHealth(float amount)
+    {
+        //currentHealth += amount;
+        currentHealth += Mathf.Clamp(amount, 0, MaxHealth - currentHealth);
+    }
 }
