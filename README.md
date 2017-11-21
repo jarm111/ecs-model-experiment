@@ -11,7 +11,6 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-- Weapon targeting & shooting mechanic
 - Hit mechanic
 - Life & death mechanic
 - Health bars
@@ -22,6 +21,8 @@ An experiment project playing with Unity's Entity Component System model.
 ## DONE
 - Movement pattern for soldier
 - Movement pattern for medic
+- Weapon shooting mechanic
+- Weapon targeting mechanic
 
 ## TOFIX
 

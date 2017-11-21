@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
@@ -7,14 +8,7 @@ public class Weapon : MonoBehaviour {
     private GameObject bullet;
     [SerializeField]
     private float rateOfFire = 3;
-    [SerializeField]
     private Transform target;
-
-    private void Shoot()
-    {
-        var bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
-        bulletInstance.GetComponent<Bullet>().Direction = target.position;
-    }
 
     private void Start()
     {
@@ -31,8 +25,24 @@ public class Weapon : MonoBehaviour {
 
     IEnumerator TimeToShoot(float time)
     {
+        FindTarget();
         Shoot();
         yield return new WaitForSeconds(time);
         StartCoroutine(TimeToShoot(rateOfFire));
+    }
+
+    private void FindTarget()
+    {
+        //var targets = new List<GameObject>();
+        //targets = GameObject.FindGameObjectsWithTag("Alien");
+        var targets = GameObject.FindGameObjectsWithTag("Alien");
+        target = targets[Random.Range(0, targets.Length)].transform;
+        //target = GameObject.FindGameObjectWithTag("Alien").transform;
+    }
+
+    private void Shoot()
+    {
+        var bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
+        bulletInstance.GetComponent<Bullet>().Direction = target.position;
     }
 }
