@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour
@@ -10,9 +9,11 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private float rateOfFire = 3;
     private Transform target;
+    private Transform bulletSpawnPoint;
 
     private void Start()
     {
+        bulletSpawnPoint = gameObject.transform.Find("BulletSpawnPoint");
         StartCoroutine(TimeToShoot(rateOfFire));
     }
 
@@ -37,7 +38,7 @@ public class Weapon : MonoBehaviour
     {
         if (target != null)
         {
-            var bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
+            var bulletInstance = Instantiate(bullet, bulletSpawnPoint.position, Quaternion.identity);
             bulletInstance.GetComponent<Bullet>().Direction = target.position;
         }
     }

@@ -11,8 +11,6 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-- Shield mechanics
-- Healing mechanics
 - Hud view for remaining team members
 - Hud view for game over
 
@@ -24,8 +22,12 @@ An experiment project playing with Unity's Entity Component System model.
 - Weapon targeting mechanics
 - Hit mechanics
 - Life & death mechanics
+- Shield mechanics
+- Healing mechanics
+- Attachable weapon object
 
 ## TOFIX
+- Weapon shoots occationally in the wrong direction.
 
 ## FIXED
 - Circular movement only works at position (0,0)
