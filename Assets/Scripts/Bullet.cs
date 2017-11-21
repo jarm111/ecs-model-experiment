@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Bullet : MonoBehaviour {
 
@@ -8,6 +6,8 @@ public class Bullet : MonoBehaviour {
     private float speed = 3;
     [SerializeField]
     private float lifetime = 2;
+    [SerializeField]
+    private float damage = 1;
 
     private Vector2 direction;
     public Vector2 Direction
@@ -31,5 +31,10 @@ public class Bullet : MonoBehaviour {
     private void Update()
     {
         rb2d.velocity = direction * speed;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        collision.GetComponent<Life>().ReduceHealth(damage);
     }
 }

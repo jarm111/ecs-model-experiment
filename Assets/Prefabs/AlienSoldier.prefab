@@ -21,7 +21,9 @@ GameObject:
   - component: {fileID: 4251793950851196}
   - component: {fileID: 212008951040657694}
   - component: {fileID: 50339958070610982}
+  - component: {fileID: 61965924363419156}
   - component: {fileID: 114390562044837864}
+  - component: {fileID: 114827388976236948}
   m_Layer: 0
   m_Name: AlienSoldier
   m_TagString: Alien
@@ -62,6 +64,31 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &61965924363419156
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375466441063660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
 --- !u!114 &114390562044837864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -75,6 +102,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   radius: 7
   speed: 5
+--- !u!114 &114827388976236948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1375466441063660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98f61f46814f0c41944d958814a11b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
 --- !u!212 &212008951040657694
 SpriteRenderer:
   m_ObjectHideFlags: 1

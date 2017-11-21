@@ -11,10 +11,9 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-- Hit mechanic
-- Life & death mechanic
 - Health bars
 - Shield mechanic
+- Healing mechanic
 - Hud view for remaining team members
 - Hud view for game over
 
@@ -23,6 +22,8 @@ An experiment project playing with Unity's Entity Component System model.
 - Movement pattern for medic
 - Weapon shooting mechanic
 - Weapon targeting mechanic
+- Hit mechanic
+- Life & death mechanic
 
 ## TOFIX
 

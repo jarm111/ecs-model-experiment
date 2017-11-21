@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : MonoBehaviour {
+public class Weapon : MonoBehaviour
+{
 
     [SerializeField]
     private GameObject bullet;
@@ -15,14 +16,6 @@ public class Weapon : MonoBehaviour {
         StartCoroutine(TimeToShoot(rateOfFire));
     }
 
-    private void Update()
-    {
-        //if(Input.GetButtonDown("Fire1"))
-        //{
-        //    Shoot();
-        //}
-    }
-
     IEnumerator TimeToShoot(float time)
     {
         FindTarget();
@@ -33,16 +26,19 @@ public class Weapon : MonoBehaviour {
 
     private void FindTarget()
     {
-        //var targets = new List<GameObject>();
-        //targets = GameObject.FindGameObjectsWithTag("Alien");
         var targets = GameObject.FindGameObjectsWithTag("Alien");
-        target = targets[Random.Range(0, targets.Length)].transform;
-        //target = GameObject.FindGameObjectWithTag("Alien").transform;
+        if (targets.Length != 0)
+        {
+            target = targets[Random.Range(0, targets.Length)].transform;
+        }
     }
 
     private void Shoot()
     {
-        var bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
-        bulletInstance.GetComponent<Bullet>().Direction = target.position;
+        if (target != null)
+        {
+            var bulletInstance = Instantiate(bullet, transform.position, Quaternion.identity);
+            bulletInstance.GetComponent<Bullet>().Direction = target.position;
+        }
     }
 }
