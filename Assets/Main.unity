@@ -147,10 +147,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 1381151678930034, guid: da776bcda4df71a4d859a292633b7f57, type: 2}
-      propertyPath: m_Name
-      value: AlienMedic
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: da776bcda4df71a4d859a292633b7f57, type: 2}
   m_IsPrefabParent: 0
@@ -196,6 +192,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: efd700bed66e7a54e91691e58009c826, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &493148424
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4043908330237416, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 1e5c76c9e0168b146bbd94e002923018, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &782098715
 Prefab:
   m_ObjectHideFlags: 0
@@ -205,7 +243,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4121601879570176, guid: fa8de355507269c4a9415b1bb832dec3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.07
+      value: 5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4121601879570176, guid: fa8de355507269c4a9415b1bb832dec3, type: 2}
       propertyPath: m_LocalPosition.y
@@ -233,19 +271,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4121601879570176, guid: fa8de355507269c4a9415b1bb832dec3, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991867388152018, guid: fa8de355507269c4a9415b1bb832dec3, type: 2}
-      propertyPath: m_Name
-      value: AlienCommander
-      objectReference: {fileID: 0}
-    - target: {fileID: 1991867388152018, guid: fa8de355507269c4a9415b1bb832dec3, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114409008648831378, guid: fa8de355507269c4a9415b1bb832dec3,
-        type: 2}
-      propertyPath: speed
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -340,10 +365,6 @@ Prefab:
       propertyPath: m_Name
       value: HumanSoldier (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 1195047828736088, guid: 674c91b859a88e04d853c9da716a38c4, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 674c91b859a88e04d853c9da716a38c4, type: 2}
   m_IsPrefabParent: 0
@@ -385,20 +406,6 @@ Prefab:
     - target: {fileID: 4251701153472274, guid: 3cbbd3f5af6c23140a904ba06d9a32d2, type: 2}
       propertyPath: m_RootOrder
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1024541019831364, guid: 3cbbd3f5af6c23140a904ba06d9a32d2, type: 2}
-      propertyPath: m_Name
-      value: HumanCommander
-      objectReference: {fileID: 0}
-    - target: {fileID: 114816341817423068, guid: 3cbbd3f5af6c23140a904ba06d9a32d2,
-        type: 2}
-      propertyPath: maxHealth
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 114782835532326370, guid: 3cbbd3f5af6c23140a904ba06d9a32d2,
-        type: 2}
-      propertyPath: speed
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3cbbd3f5af6c23140a904ba06d9a32d2, type: 2}
@@ -534,10 +541,6 @@ Prefab:
     - target: {fileID: 1375466441063660, guid: bbe7484f2fda0804783af58b65468efe, type: 2}
       propertyPath: m_Name
       value: AlienSoldier (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1375466441063660, guid: bbe7484f2fda0804783af58b65468efe, type: 2}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbe7484f2fda0804783af58b65468efe, type: 2}

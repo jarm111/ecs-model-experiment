@@ -11,8 +11,8 @@ An experiment project playing with Unity's Entity Component System model.
 - Win text for each team
 
 ## TODO
-- Hud view for remaining team members
 - Hud view for game over
+- Observer pattern for hud
 
 ## DONE
 - Health bars
@@ -26,6 +26,7 @@ An experiment project playing with Unity's Entity Component System model.
 - Healing mechanics
 - Attachable weapon object
 - Both teams has full team composition
+- Hud view for remaining team members
 
 ## TOFIX
 - Weapon shoots occationally in the wrong direction.
