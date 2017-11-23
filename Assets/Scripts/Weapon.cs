@@ -27,7 +27,7 @@ public class Weapon : MonoBehaviour
 
     private void FindTarget()
     {
-        var targets = GameObject.FindGameObjectsWithTag("Alien");
+        var targets = GameObject.FindGameObjectsWithTag(ReturnEnemyTag());
         if (targets.Length != 0)
         {
             target = targets[Random.Range(0, targets.Length)].transform;
@@ -40,6 +40,17 @@ public class Weapon : MonoBehaviour
         {
             var bulletInstance = Instantiate(bullet, bulletSpawnPoint.position, Quaternion.identity);
             bulletInstance.GetComponent<Bullet>().Direction = target.position;
+        }
+    }
+
+    private string ReturnEnemyTag()
+    {
+        if (transform.parent.gameObject.tag.Equals("Human")) {
+            return "Alien";
+        }
+        else
+        {
+            return "Human";
         }
     }
 }

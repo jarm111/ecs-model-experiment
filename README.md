@@ -25,6 +25,7 @@ An experiment project playing with Unity's Entity Component System model.
 - Shield mechanics
 - Healing mechanics
 - Attachable weapon object
+- Both teams has full team composition
 
 ## TOFIX
 - Weapon shoots occationally in the wrong direction.
