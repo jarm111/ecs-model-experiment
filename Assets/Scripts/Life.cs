@@ -20,10 +20,13 @@ public class Life : MonoBehaviour {
             return currentHealth;
         }
     }
+
+    private Subject subject = new Subject();
     
     private void Start()
     {
         currentHealth = maxHealth;
+        subject.AddObserver(Hud.Instance);
     }
 
     public void ReduceHealth(float amount)
@@ -39,6 +42,7 @@ public class Life : MonoBehaviour {
     public void Die()
     {
         Destroy(gameObject);
+        subject.Notify();
     }
 
     public void IncreaseHealth(float amount)

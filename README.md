@@ -13,6 +13,7 @@ An experiment project playing with Unity's Entity Component System model.
 ## TODO
 - Hud view for game over
 - Observer pattern for hud
+- Singleton pattern for hud
 
 ## DONE
 - Health bars
@@ -27,9 +28,12 @@ An experiment project playing with Unity's Entity Component System model.
 - Attachable weapon object
 - Both teams has full team composition
 - Hud view for remaining team members
+- Observer pattern for hud
+- Singleton pattern for hud
 
 ## TOFIX
 - Weapon shoots occationally in the wrong direction.
+- Teamcount doesn't work with observer pattern implemented.
 
 ## FIXED
 - Circular movement only works at position (0,0)
