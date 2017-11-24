@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Life : MonoBehaviour {
+public class Life : Subject {
 
     [SerializeField]
     private float maxHealth = 1;
@@ -20,13 +20,11 @@ public class Life : MonoBehaviour {
             return currentHealth;
         }
     }
-
-    private Subject subject = new Subject();
     
     private void Start()
     {
         currentHealth = maxHealth;
-        subject.AddObserver(Hud.Instance);
+        AddObserver(TeamCount.Instance);
     }
 
     public void ReduceHealth(float amount)
@@ -41,13 +39,12 @@ public class Life : MonoBehaviour {
 
     public void Die()
     {
+        Notify(gameObject);
         Destroy(gameObject);
-        subject.Notify();
     }
 
     public void IncreaseHealth(float amount)
     {
-        //currentHealth += amount;
         currentHealth += Mathf.Clamp(amount, 0, MaxHealth - currentHealth);
     }
 }
