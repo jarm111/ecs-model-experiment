@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class TeamCountDisplay : MonoBehaviour {
+public class TeamCountHud : MonoBehaviour {
 
     private GUIStyle font;
 
