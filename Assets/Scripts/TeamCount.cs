@@ -34,6 +34,9 @@ public class TeamCount : Observer {
         }
     }
 
+    public delegate void OnTeamCountChangeEvent();
+    public event OnTeamCountChangeEvent OnTeamCountChange;
+
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -44,10 +47,7 @@ public class TeamCount : Observer {
         {
             instance = this;
         }
-    }
 
-    private void Start()
-    {
         humanCount = CalculateTeamCount("Human");
         alienCount = CalculateTeamCount("Alien");
     }
@@ -72,5 +72,6 @@ public class TeamCount : Observer {
     private void ReduceTeamCount(ref int team)
     {
         team--;
+        OnTeamCountChange();
     }
 }
