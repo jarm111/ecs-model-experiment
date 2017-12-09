@@ -8,11 +8,11 @@ public class Subject : MonoBehaviour
     private List<Observer> observers = new List<Observer>();
 
     // Send notification if something has happened.
-    public void Notify(GameObject obj)
+    public void Notify(GameObject subject)
     {
-        foreach (Observer element in observers)
+        foreach (Observer observer in observers)
         {
-            element.OnNotify(obj);
+            observer.OnNotify(subject);
         }
     }
 

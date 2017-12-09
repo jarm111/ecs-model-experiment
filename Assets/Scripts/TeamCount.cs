@@ -3,6 +3,13 @@
 public class TeamCount : Observer {
 
     private static TeamCount instance;
+
+    private int humanCount;
+    private int alienCount;
+
+    public delegate void OnTeamCountChangeEvent();
+    public event OnTeamCountChangeEvent OnTeamCountChange;
+
     public static TeamCount Instance
     {
         get
@@ -11,7 +18,6 @@ public class TeamCount : Observer {
         }
     }
 
-    private int humanCount;
     public int HumanCount
     {
         get
@@ -20,22 +26,14 @@ public class TeamCount : Observer {
         }
     }
 
-    private int alienCount;
+
     public int AlienCount
     {
         get
         {
             return alienCount;
         }
-
-        set
-        {
-            alienCount = value;
-        }
     }
-
-    public delegate void OnTeamCountChangeEvent();
-    public event OnTeamCountChangeEvent OnTeamCountChange;
 
     private void Awake()
     {
@@ -52,12 +50,12 @@ public class TeamCount : Observer {
         alienCount = CalculateTeamCount("Alien");
     }
 
-    public override void OnNotify(GameObject obj)
+    public override void OnNotify(GameObject subject)
     {
-        if (obj.CompareTag("Human")) {
+        if (subject.CompareTag("Human")) {
             ReduceTeamCount(ref humanCount);
         }
-        else if (obj.CompareTag("Alien"))
+        else if (subject.CompareTag("Alien"))
         {
             ReduceTeamCount(ref alienCount);
         }

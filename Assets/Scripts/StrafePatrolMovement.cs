@@ -30,9 +30,4 @@ public class StrafePatrolMovement : MonoBehaviour {
 
         rb2d.velocity = new Vector2(0, speed);
     }
-
-    private void FixedUpdate()
-    {
-        //rb2d.velocity = new Vector2(0, speed);
-    }
 }

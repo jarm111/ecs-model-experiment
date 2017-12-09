@@ -8,8 +8,9 @@ public class Bullet : MonoBehaviour {
     private float lifetime = 2;
     [SerializeField]
     private float damage = 1;
-
     private Vector2 direction;
+    private Rigidbody2D rb2d;
+
     public Vector2 Direction
     {
         set
@@ -19,11 +20,8 @@ public class Bullet : MonoBehaviour {
         }
     }
 
-    private Rigidbody2D rb2d;
-
     private void Start()
     {
-        //direction = new Vector3(speed, 0, 0);
         rb2d = GetComponent<Rigidbody2D>();
         Destroy(gameObject, lifetime);
     }
@@ -36,10 +34,12 @@ public class Bullet : MonoBehaviour {
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var life = collision.GetComponent<Life>();
+
         if (life != null)
         {
             life.ReduceHealth(damage);
         }
+
         Destroy(gameObject);
     }
 }

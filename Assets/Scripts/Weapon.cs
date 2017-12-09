@@ -28,7 +28,8 @@ public class Weapon : MonoBehaviour
     private void FindTarget()
     {
         var targets = GameObject.FindGameObjectsWithTag(ReturnEnemyTag());
-        if (targets.Length != 0)
+
+        if (targets.Length > 0)
         {
             target = targets[Random.Range(0, targets.Length)].transform;
         }
@@ -45,7 +46,8 @@ public class Weapon : MonoBehaviour
 
     private string ReturnEnemyTag()
     {
-        if (transform.parent.gameObject.tag.Equals("Human")) {
+        if (transform.parent.gameObject.tag.Equals("Human"))
+        {
             return "Alien";
         }
         else

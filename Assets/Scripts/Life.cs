@@ -4,6 +4,8 @@ public class Life : Subject {
 
     [SerializeField]
     private float maxHealth = 1;
+    private float currentHealth = 1;
+
     public float MaxHealth
     {
         get
@@ -12,7 +14,6 @@ public class Life : Subject {
         }
     }
 
-    private float currentHealth = 1;
     public float CurrentHealth
     {
         get
@@ -20,7 +21,7 @@ public class Life : Subject {
             return currentHealth;
         }
     }
-    
+
     private void Start()
     {
         currentHealth = maxHealth;

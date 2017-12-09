@@ -18,7 +18,6 @@ public class HpBar : MonoBehaviour
     private Texture2D barForeground;
     [SerializeField]
     private HpBarProperties barProperties;
-
     private Life life;
     private float healthPercent;
     private Vector3 barPosition;
@@ -30,16 +29,20 @@ public class HpBar : MonoBehaviour
 
     private void Update()
     {
-        barPosition = Camera.main.WorldToScreenPoint(new Vector3(transform.position.x + barProperties.xOffset, transform.position.y + barProperties.yOffset, transform.position.z));
+        barPosition = Camera.main.WorldToScreenPoint(new Vector3(transform.position.x + barProperties.xOffset, 
+            transform.position.y + barProperties.yOffset, transform.position.z));
         barPosition.y = Screen.height - barPosition.y;
         healthPercent = (float)life.CurrentHealth / (float)life.MaxHealth;
     }
 
     void OnGUI()
     {
-        GUI.DrawTexture(new Rect(barPosition.x - barProperties.barWidth / 2, barPosition.y, barProperties.barWidth, barProperties.barHeight), barBackground, ScaleMode.StretchToFill);
-        GUI.BeginGroup(new Rect(barPosition.x - barProperties.barWidth / 2, barPosition.y, barProperties.barWidth * healthPercent, barProperties.barHeight));
-        GUI.DrawTexture(new Rect(0, 0, barProperties.barWidth, barProperties.barHeight), barForeground, ScaleMode.StretchToFill);
+        GUI.DrawTexture(new Rect(barPosition.x - barProperties.barWidth / 2, barPosition.y, 
+            barProperties.barWidth, barProperties.barHeight), barBackground, ScaleMode.StretchToFill);
+        GUI.BeginGroup(new Rect(barPosition.x - barProperties.barWidth / 2, barPosition.y, 
+            barProperties.barWidth * healthPercent, barProperties.barHeight));
+        GUI.DrawTexture(new Rect(0, 0, barProperties.barWidth, barProperties.barHeight), 
+            barForeground, ScaleMode.StretchToFill);
         GUI.EndGroup();
     }
 }
