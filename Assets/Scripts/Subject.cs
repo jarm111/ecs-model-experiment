@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class Subject : MonoBehaviour
+public class Subject
 {
 
     // A list with observers that are waiting for something to happen.

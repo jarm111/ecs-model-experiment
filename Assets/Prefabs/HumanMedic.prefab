@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8179ef81e36e4d46808c80e46ac318b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 3
   minY: -3
   maxY: 3
 --- !u!114 &114934086593762408
@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1f9e4aa0319e54c8d1e90dd4ee7b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healingAmount: 0.011
+  healingAmount: 0.012
 --- !u!212 &212252459505076962
 SpriteRenderer:
   m_ObjectHideFlags: 1

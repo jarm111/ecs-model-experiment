@@ -1,10 +1,11 @@
 ﻿using UnityEngine;
 
-public class Life : Subject {
+public class Life : MonoBehaviour {
 
     [SerializeField]
     private float maxHealth = 1;
     private float currentHealth = 1;
+    private Subject subject = new Subject();
 
     public float MaxHealth
     {
@@ -25,7 +26,7 @@ public class Life : Subject {
     private void Start()
     {
         currentHealth = maxHealth;
-        AddObserver(TeamCount.Instance);
+        subject.AddObserver(TeamCount.Instance);
     }
 
     public void ReduceHealth(float amount)
@@ -40,7 +41,7 @@ public class Life : Subject {
 
     public void Die()
     {
-        Notify(gameObject);
+        subject.Notify(gameObject);
         Destroy(gameObject);
     }
 
