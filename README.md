@@ -3,15 +3,13 @@ An experiment project playing with Unity's Entity Component System model.
 
 ## Features
 - Human and Alien team
-- 1 commander, 4 soldiers and 1 medic in each team
-- Commander and soldiers walk in circle and shoot random enemy team member
+- 1 commander, 2 soldiers and 1 medic in each team
+- Soldiers walk in circle and shoot random enemy team member
 - Commander moves slower and is bigger but has a shield that blocks damage
 - Medic strafes sideways behind other team and heals closest team member
 - Hud-text for remaining team members
-- Win text for each team
 
 ## TODO
-- Hud view for game over
 
 ## DONE
 - Health bars
@@ -32,7 +30,6 @@ An experiment project playing with Unity's Entity Component System model.
 - HudManager gets count from GameManager
 
 ## TOFIX
-- Weapon shoots occationally in the wrong direction.
 
 ## FIXED
 - Circular movement only works at position (0,0)
